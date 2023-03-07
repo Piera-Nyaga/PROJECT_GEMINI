@@ -1,0 +1,71 @@
+.hero{
+    height:630px;
+    background-image: url(../../assets/images/webdesign-interview-questions-and-answers.jpg);
+    background-size: fit;
+}
+.hero h1{
+    /* margin-top: 70px; */
+    align-items: center;
+}
+/* .about{
+    display: flex;
+    margin-top: 10px;
+    gap: 50px;
+} */
+/* .about .image img{
+    
+} */
+.info{
+    height: 190px;
+    background-image: url(.././../assets/images/background-binary-compute.jpg);
+
+    /* background-color: rgb(120,185,227) ; */
+}
+
+.info p{
+    color: white;
+    font-size: 32px;
+    padding: 16px;
+}
+/* .onebg{
+    background-color: rgb(53, 74, 86);
+} */
+.mandate{
+    height: 100px;
+    background-color: rgb(53, 74, 86);
+}
+.mandate p{
+    font-size: 30px;
+    color: white;
+    /* align-content: center;
+    align-items: center;
+    justify-content: center; */
+}
+.use{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.instructions{
+    display: flex;
+    justify-content: space-around;
+}
+.cards{
+    height: 130px;
+    width:200px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.05),
+0 20px 48px hsla(0, 0%, 0%, 0.05),
+0 1px 4px hsla(0, 0%, 0%, 0.1);
+    border-radius: 7px
+}
+
+.cards h3{
+     padding-top: 30px;
+     /* color: white; */
+}
+.stats{
+    display: flex;
+    justify-content: space-around;
+}

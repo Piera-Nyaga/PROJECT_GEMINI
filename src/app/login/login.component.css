@@ -1,0 +1,41 @@
+
+#sign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccc;
+    width: 700px;
+    border-radius: 7px;
+    padding: 30px;
+
+}
+
+/* the sign-up form */
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 40px;     
+}
+
+form input {
+    height: 30px;
+}
+
+/* Sign in button */
+.signin{
+    height: 30px;
+    width: 100px;
+    border: 0.5em;
+    border-radius: 7px;
+    background-color: rgba(35, 166, 240, 255);   
+}
+
+
+/* links */
+#buttns{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
