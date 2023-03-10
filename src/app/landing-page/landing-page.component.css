@@ -1,17 +1,25 @@
+.welcome h1{
+    padding-left: 30px;
+}
 .hero{
-    height:630px;
-    background-image: url(../../assets/images/webdesign-interview-questions-and-answers.jpg);
-    background-size: fit;
-}
-.hero h1{
-    /* margin-top: 70px; */
-    align-items: center;
-}
-/* .about{
+    height:600px;
+    background-image: url(../../assets/images/hexagon.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 0px;
     display: flex;
-    margin-top: 10px;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    /* flex-wrap: wrap; */
     gap: 50px;
-} */
+    /* padding-right: 30px; */
+}
+.hero .one h1{
+    /* padding-right: 10px; */
+    color: black;
+}
+
 /* .about .image img{
     
 } */
@@ -68,4 +76,9 @@
 .stats{
     display: flex;
     justify-content: space-around;
+}
+
+.users-card .fa-users{
+    color:aqua;
+    font-size: 3rem;
 }

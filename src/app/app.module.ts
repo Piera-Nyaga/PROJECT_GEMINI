@@ -3,7 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegisterComponent } from './register/register.component';
+import { OnequestionComponent } from './onequestion/onequestion.component';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,10 @@ import { RegisterComponent } from './register/register.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RegisterComponent,
-    
-
+    OnequestionComponent,
+    StoreModule.forRoot({}, {}),
+    EffectsModule.forRoot([])
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

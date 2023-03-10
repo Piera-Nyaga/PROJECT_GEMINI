@@ -10,4 +10,15 @@ import { CommonModule } from '@angular/common';
 })
 export class MyquestionsComponent {
 
+  shqQuiz=false;
+
+  shAnsw = false;
+
+  ShowQuestion(){
+    this.shqQuiz=!this.shqQuiz
+  }
+
+  showAnsw(){
+    this.shAnsw=!this.shAnsw
+  }
 }

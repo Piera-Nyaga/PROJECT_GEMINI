@@ -1,10 +1,16 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    /* box-sizing: border-box; */
+}
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    height: 60px;
+    height: 30px;
     background-color: rgb(134, 185, 216);
+    margin-bottom: 0px;
 }
 .header .image a img{
     width: 100px;
