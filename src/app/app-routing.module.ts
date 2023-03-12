@@ -10,7 +10,8 @@ const routes: Routes = [
     { path: '', loadComponent: () => import('./profile/allmyquestions/allmyquestions.component').then(c => c.AllmyquestionsComponent)},
     { path: 'mostanswered', loadComponent: () => import('./profile/mostanswered/mostanswered.component').then(c => c.MostansweredComponent)},
     { path: 'mostrecent', loadComponent: () => import('./profile/mostrecent/mostrecent.component').then(c => c.MostrecentComponent)},
-  ]},
+  ]
+},
 
   {path: 'home', loadComponent: () => import('./homepage/homepage.component').then(c => c.HomepageComponent),
     children: [
@@ -20,7 +21,15 @@ const routes: Routes = [
       { path: 'one/:id', loadComponent: () => import('./onequestion/onequestion.component').then(c => c.OnequestionComponent)},
       { path: 'edit/:id', loadComponent: () => import('./editquestion/editquestion.component').then(c => c.EditquestionComponent)},
     ]
-  }
+  },
+
+  { path: 'admin', loadComponent: () => import('./admin/admin.component').then(c => c.AdminComponent),
+  children: [
+    { path: '', loadComponent: () => import('./admin/users/users.component').then(c=>c.UsersComponent)},
+    { path: 'questions', loadComponent: () => import('./admin/questions/questions.component').then(c => c.QuestionsComponent)},
+    // { path: 'questions', loadComponent: () => import('./profile/mostrecent/mostrecent.component').then(c => c.MostrecentComponent)},
+  ]
+}
 ]
 
 @NgModule({

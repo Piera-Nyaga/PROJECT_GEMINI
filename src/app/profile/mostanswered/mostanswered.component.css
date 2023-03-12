@@ -1,0 +1,10 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.one{
+    background-color: azure;
+    padding: 15px;
+}

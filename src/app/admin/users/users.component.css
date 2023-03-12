@@ -1,0 +1,9 @@
+tr{
+    background-color: wheat;
+    width:200px;
+  }
+  .fa-trash{
+    border: none;
+    background-color: cadetblue;
+    padding: 0.5rem;
+  }
