@@ -3,23 +3,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* gap: 20px; */
-    background-color: #cccc;
+    background-color: darkgrey;
     width: 700px;
     border-radius: 7px;
-    padding: 30px;
+    /* padding: 30px; */
     height: 90%;
+    margin-top: 50px;
+    margin-left: 300px;
 }
 form{
     display: flex;
     flex-direction: column;
-    width: 70%;
-    gap: 30px;  
-    /* height: 500px */
+    width: 90%;
+    gap: 30px;        
+}
+
+form h3{
+    text-align: center;
 }
 
 form input {
-    height: 30px;
+    height: 35px;
+    width: 90%;
+
 }
 
 .regbutton {
@@ -27,5 +33,8 @@ form input {
     width: 100px;
     border: 0.5em;
     border-radius: 7px;
-    background-color: rgba(35, 166, 240, 255);
+    background-color: rgb(134, 185, 216);
+}
+#buttns{
+    padding-bottom: 19px;
 }

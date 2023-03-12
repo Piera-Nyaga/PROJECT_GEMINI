@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { QuestionService } from '../Services/QuestionsService/questionservice';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Question } from '../Interfaces/question';
 
 @Component({
   selector: 'app-myquestions',
@@ -9,16 +12,19 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./myquestions.component.css']
 })
 export class MyquestionsComponent {
+  question:Question[]=[]
 
-  shqQuiz=false;
+constructor(private questionService:QuestionService, private router:Router, private route:ActivatedRoute){}
 
-  shAnsw = false;
 
-  ShowQuestion(){
-    this.shqQuiz=!this.shqQuiz
-  }
+ngOnInit(): void {
+  this.question = this.questionService.getQuiz()
+  // console.log(this.questionService.getQuiz());
+}
 
-  showAnsw(){
-    this.shAnsw=!this.shAnsw
-  }
+getOneQuiz(id:string){
+  let one:Question
+  this.questionService.getOneQuiz(id)
+}
+  
 }

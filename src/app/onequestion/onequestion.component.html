@@ -2,7 +2,7 @@
     <div class="question">
 
         <div class="section-1">
-            <p>{{x!.title}}</p>
+            <p>{{question?.title}}</p>
             <h2 *ngIf="!shqQuiz" (click)="ShowQuestion()"> <button>+</button> </h2>
             <h2 *ngIf="shqQuiz" (click)="ShowQuestion()"> <button>-</button> </h2>
         </div>
@@ -22,19 +22,31 @@
                 <p> 10 Votes</p>
                 <p>You will have to submit a support request through AWS Contact Us page. Open the I cannot login to my
                     AWS Account and then Lost account information. Hope that helps</p>
+
                 <h2 class="answer-minus" *ngIf="!shAnsw" (click)="showAnsw()"> <button>+</button> </h2>
                 <h2 class="answer-minus" *ngIf="shAnsw" (click)="showAnsw()"> <button>-</button> </h2>
-
             </div>
 
-            <div class="answer-content" *ngIf="shAnsw">
+            <div class="postanswer" *ngIf="shqQuiz">
+            <form>
+                <textarea name="" id="" cols="100" rows="10" placeholder="Post your Answer Here"> </textarea>
+            </form>
+            </div>
+
+            <div class="comment" *ngIf="shAnsw">
                 <p>Comment</p>
                 <p>
                     You will have to submit a support request through AWS Contact Us page. Open the I cannot login to my
                     AWS Account and then Lost account information. Hope that helps.
                 </p>
             </div>
+
+            <div class="postcomment" *ngIf="shAnsw">
+                <textarea name="" id="" cols="100" rows="10" placeholder="Add your Comment"> </textarea>
+            </div>
         </div>
     </div>
+
+    <button (click)="Update()">UPDATE</button>
 
 </div>

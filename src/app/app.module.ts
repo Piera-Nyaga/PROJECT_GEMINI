@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { OnequestionComponent } from './onequestion/onequestion.component';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
+import { EditquestionComponent } from './editquestion/editquestion.component';
 
 @NgModule({
   declarations: [
     AppComponent
+    
   ],
   imports: [
     BrowserModule,

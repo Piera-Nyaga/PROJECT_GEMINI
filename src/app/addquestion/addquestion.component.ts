@@ -20,13 +20,13 @@ export class AddquestionComponent implements OnInit {
     this.form= this.fb.group({
       title:[null, [Validators.required]],
       description:[null, [Validators.required]],   
-      codehere:[null, [Validators.required]],
+      code:[null, [Validators.required]],
       createdAt: [new Date().toLocaleDateString(), [Validators.required]]
     })
   }
 
   addQuiz(){
-    let question:Question={ id: Math.random() * 10000, ...this.form.value }
+    let question:Question={ id: Math.floor(Math.random() * 1000000).toString(), ...this.form.value }
     this.questionService.addQuiz(question)
 
     this.form.reset()

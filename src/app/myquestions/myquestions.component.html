@@ -1,31 +1,25 @@
-<div class="question">
+<div class="content" *ngIf="question.length>0">
+    <div class="one" *ngFor="let one of question">
 
-    <div class="section-1">
-        <p>Error print user.default swift 3</p>
-        <h2  *ngIf ="!shqQuiz" (click)="ShowQuestion()">+</h2>
-        <h2  *ngIf ="shqQuiz" (click)="ShowQuestion()">-</h2>
+        <div class="title">
+            <h3>{{one.title}}</h3>
+        </div>
+
+        <div class="description">
+            <p>{{one.description}}</p>
+        </div>
+
+        <div class="metadata">
+            <div class="answer"> 10 answers</div>
+
+            <div class="time">
+                <div class="user"> Jane Doe</div>
+                <div class="created"> {{one.createdAt}}</div>
+            </div>
+
+        </div>
+
+        <!-- <button>UPDATE</button>
+        <button>DELETE</button> -->
     </div>
-    
-
-<div class="shoUp" *ngIf="shqQuiz" >
-
-
-    <div class="question-content" >
-        <p>I have two screens the first of login and the second shows the user information. On the login screen I keep the user_id value in user.defaults and when I go to the second screen I use that value to..
-        </p>
-    </div>
-
-    <div class="answer"  *ngIf="shqQuiz">
-        <p>Answer</p> <p> 10 Votes</p>
-        <h2 class="answer-minus" *ngIf ="!shAnsw" (click)="showAnsw()">+</h2>
-        <h2 class="answer-minus" *ngIf ="shAnsw" (click)="showAnsw()">-</h2>
-
-    </div>
-
-    <div class="answer-content"  *ngIf="shAnsw">
-        <p>
-            You will have to submit a support request through AWS Contact Us page. Open the I cannot login to my AWS Account and then Lost account information. Hope that helps :)
-        </p>
-    </div>
-</div>
 </div>

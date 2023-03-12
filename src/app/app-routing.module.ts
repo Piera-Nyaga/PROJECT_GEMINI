@@ -5,11 +5,20 @@ const routes: Routes = [
   { path: '', loadComponent: () => import('./landing-page/landing-page.component').then(c => c.LandingPageComponent) },
   { path: 'register', loadComponent: () => import('./register/register.component').then(c => c.RegisterComponent) },
   { path: 'login', loadComponent: () => import('./login/login.component').then(c => c.LoginComponent) },
+  { path: 'profile', loadComponent: () => import('./profile/profile.component').then(c => c.ProfileComponent),
+  children: [
+    { path: '', loadComponent: () => import('./profile/allmyquestions/allmyquestions.component').then(c => c.AllmyquestionsComponent)},
+    { path: 'mostanswered', loadComponent: () => import('./profile/mostanswered/mostanswered.component').then(c => c.MostansweredComponent)},
+    { path: 'mostrecent', loadComponent: () => import('./profile/mostrecent/mostrecent.component').then(c => c.MostrecentComponent)},
+  ]},
+
   {path: 'home', loadComponent: () => import('./homepage/homepage.component').then(c => c.HomepageComponent),
     children: [
       { path: '', loadComponent: () => import('./allquestions/allquestions.component').then(c => c.AllquestionsComponent)},
+      { path: 'myquestions', loadComponent: () => import('./myquestions/myquestions.component').then(c => c.MyquestionsComponent)},
       { path: 'add', loadComponent: () => import('./addquestion/addquestion.component').then(c => c.AddquestionComponent)},
-      { path: 'one/:id', loadComponent: () => import('./onequestion/onequestion.component').then(c => c.OnequestionComponent)} 
+      { path: 'one/:id', loadComponent: () => import('./onequestion/onequestion.component').then(c => c.OnequestionComponent)},
+      { path: 'edit/:id', loadComponent: () => import('./editquestion/editquestion.component').then(c => c.EditquestionComponent)},
     ]
   }
 ]

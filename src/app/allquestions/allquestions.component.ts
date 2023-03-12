@@ -25,7 +25,7 @@ ngOnInit(): void {
   // console.log(this.questionService.getQuiz());
 }
 
-getOneQuiz(id:number){
+getOneQuiz(id:string){
   let one:Question
   this.questionService.getOneQuiz(id)
 }
