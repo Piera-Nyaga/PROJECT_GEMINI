@@ -85,12 +85,7 @@ button{
     justify-content: space-around;
     margin-top: 30px;
 }
-/* .card{
-    box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.05),
-0 20px 48px hsla(0, 0%, 0%, 0.05),
-0 1px 4px hsla(0, 0%, 0%, 0.1);
-    border-radius: 7px;
-} */
+
 
 .card .fa-users,.card .fa-clipboard-question, .card .fa-message {
     color: #CC6222;

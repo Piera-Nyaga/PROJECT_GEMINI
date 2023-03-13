@@ -1,4 +1,4 @@
-.question,.section-1 {
+/* .question,.section-1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,7 +7,7 @@
 }
 .question{
     flex-direction: column;
-}
+} */
 .section-1, .answer{
     background-color: azure;
     width: 100%;
