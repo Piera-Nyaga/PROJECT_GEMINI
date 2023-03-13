@@ -18,11 +18,11 @@ form label{
     color:rgb(204, 98, 34)
 }
 button{
-    height:30px;
-    width:90px;
-    background-color:rgb(204, 98, 34) ;
-    color: white;
+    height: 30px;
+    width: 100px;
+    border: 0.5em;
     border-radius: 7px;
+    background-color: #CC6222;
 }
 
 button p{

@@ -7,8 +7,12 @@
 .one{
     /* background-color: azure; */
     padding: 15px;
-
+    box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.05),
+0 20px 48px hsla(0, 0%, 0%, 0.05),
+0 1px 4px hsla(0, 0%, 0%, 0.1);
+    border-radius: 7px;
 }
+
 .metadata{
     display: flex;
     justify-content: space-between;

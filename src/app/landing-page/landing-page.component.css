@@ -7,7 +7,7 @@ button{
     height: 50px;
     width: 120px;
     border-radius: 7px;
-    background-color: black;
+    background-color: #CC6222;
     color: white;
     
 }
@@ -27,6 +27,7 @@ button{
 .hero .one h1{
     color: black;
     text-align: center;
+    font-size: 3rem;
 }
 
 .info{
@@ -38,11 +39,16 @@ button{
 .info p{
     color: black;
     font-size: 32px;
-    padding: 16px;
+    margin-top: 40px;
+    padding: 20px;
     text-align: center;
 }
 .onebg{
     background-color: rgba(250,250,250,255);
+    height: 300px;
+}
+.howto{
+    margin-top: 15px;
 }
 
 .use{
@@ -64,7 +70,7 @@ button{
     box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.05),
 0 20px 48px hsla(0, 0%, 0%, 0.05),
 0 1px 4px hsla(0, 0%, 0%, 0.1);
-    border-radius: 7px
+    border-radius: 7px;
 }
 
 .cards h3{
@@ -83,11 +89,23 @@ button{
 .stats{
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 40px;
+    height: 200px;
+    padding-top: 40px;
 }
 
+.card1, .card2, .card3 {
+    height: 130px;
+    width:200px;
+    font-size: larger;
 
-.card .fa-users,.card .fa-clipboard-question, .card .fa-message {
+}
+
+.card1 .fa-users,.card2 .fa-clipboard-question, .card3 .fa-message {
     color: #CC6222;
     font-size: 3rem;
+}
+
+.card2{
+    margin-top: -80px;
 }

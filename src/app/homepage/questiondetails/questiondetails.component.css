@@ -1,17 +1,12 @@
-/* .question,.section-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-}
-.question{
-    flex-direction: column;
-} */
-.section-1, .answer{
+
+.section-1{
     background-color: azure;
     width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
 }
+
 .info{
     display: flex;
     flex-direction: column;
@@ -24,13 +19,15 @@
 .time{
     display: flex;
     justify-content: space-between;
-    /* gap: 5px; */
+    
 }
 .answer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
+    background-color: azure;
+    width: 100%;
 }
 .meta{
     display: flex;

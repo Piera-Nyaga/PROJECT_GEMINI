@@ -3,20 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OnequestionComponent } from './onequestion/onequestion.component';
+// import { OnequestionComponent } from './onequestion/onequestion.component';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { EditquestionComponent } from './editquestion/editquestion.component';
+import { EditquestionComponent } from './homepage/editquestion/editquestion.component';
+import { QuestiondetailsComponent } from './homepage/questiondetails/questiondetails.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuestiondetailsComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OnequestionComponent,
     StoreModule.forRoot({}, {}),
     EffectsModule.forRoot([])
   

@@ -1,20 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Store } from '@ngrx/store';
-import { loadQuestions } from '../States/Actions/questions.action';
-import { Question } from '../Interfaces/question';
-import { QuestionService } from '../Services/QuestionsService/questionservice';
+import { QuestionService } from '../../Services/QuestionsService/questionservice';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { Question } from '../../Interfaces/question';
 
 @Component({
-  selector: 'app-allquestions',
+  selector: 'app-myquestions',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './allquestions.component.html',
-  styleUrls: ['./allquestions.component.css']
+  templateUrl: './myquestions.component.html',
+  styleUrls: ['./myquestions.component.css']
 })
-export class AllquestionsComponent {
-
+export class MyquestionsComponent{
   question:Question[]=[]
 
 constructor(private questionService:QuestionService, private router:Router, private route:ActivatedRoute){}
@@ -29,6 +26,5 @@ getOneQuiz(id:string){
   let one:Question
   this.questionService.getOneQuiz(id)
 }
-
   
 }

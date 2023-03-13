@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ActivatedRoute, Params, Router, RouterModule } from '@angular/router';
-import { Question } from '../Interfaces/question';
-import { QuestionService } from '../Services/QuestionsService/questionservice';
+import { Question } from '../../Interfaces/question';
+import { QuestionService } from '../../Services/QuestionsService/questionservice';
 
 @Component({
   selector: 'app-editquestion',

@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Question } from '../Interfaces/question';
+import { Question } from '../../Interfaces/question';
 import { ActivatedRoute, Params, Router, RouterModule } from '@angular/router';
-import { QuestionService } from '../Services/QuestionsService/questionservice';
+import { QuestionService } from '../../Services/QuestionsService/questionservice';
 
 @Component({
   selector: 'app-onequestion',
@@ -11,8 +11,8 @@ import { QuestionService } from '../Services/QuestionsService/questionservice';
   templateUrl: './onequestion.component.html',
   styleUrls: ['./onequestion.component.css']
 })
+
 export class OnequestionComponent implements OnInit{
-//  @Input() one?:Question
  question?:Question;
  id!:string
 

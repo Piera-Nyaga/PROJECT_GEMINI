@@ -15,16 +15,20 @@ form{
     display: flex;
     flex-direction: column;
     width: 90%;
-    gap: 30px;        
+    gap: 30px;     
 }
 
 form h3{
     text-align: center;
+    padding-top: 10px;
 }
 
 form input {
     height: 35px;
     width: 90%;
+    border: 0.5em;
+    border-radius: 7px;
+    padding: 5px;
 
 }
 
@@ -37,4 +41,7 @@ form input {
 }
 #buttns{
     padding-bottom: 19px;
+}
+span{
+    color: red;
 }

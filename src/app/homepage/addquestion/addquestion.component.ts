@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators,ReactiveFormsModule } from '@angular/forms';
-import { Question } from '../Interfaces/question';
-import { QuestionService } from '../Services/QuestionsService/questionservice';
+import { Question } from '../../Interfaces/question';
+import { QuestionService } from '../../Services/QuestionsService/questionservice';
 
 @Component({
   selector: 'app-addquestion',
