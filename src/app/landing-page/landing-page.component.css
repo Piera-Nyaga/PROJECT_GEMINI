@@ -1,5 +1,15 @@
-.welcome h1{
+.welcome{
     padding-left: 30px;
+}
+
+button{
+    border: 0.4em;
+    height: 50px;
+    width: 120px;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    
 }
 .hero{
     height:600px;
@@ -11,52 +21,40 @@
     flex-direction: row;
     justify-content:center;
     align-items: center;
-    /* flex-wrap: wrap; */
     gap: 50px;
-    /* padding-right: 30px; */
 }
-.hero .one h1{
-    /* padding-right: 10px; */
-    color: black;
-}
-
-/* .about .image img{
     
-} */
-.info{
-    height: 190px;
-    background-image: url(.././../assets/images/background-binary-compute.jpg);
+.hero .one h1{
+    color: black;
+    text-align: center;
+}
 
-    /* background-color: rgb(120,185,227) ; */
+.info{
+    height: 160px;
+    /* background-color: rgb(53, 74, 86); */
+    
 }
 
 .info p{
-    color: white;
+    color: black;
     font-size: 32px;
     padding: 16px;
+    text-align: center;
 }
-/* .onebg{
-    background-color: rgb(53, 74, 86);
-} */
-.mandate{
-    height: 100px;
-    background-color: rgb(53, 74, 86);
+.onebg{
+    background-color: rgba(250,250,250,255);
 }
-.mandate p{
-    font-size: 30px;
-    color: white;
-    /* align-content: center;
-    align-items: center;
-    justify-content: center; */
-}
+
 .use{
     display: flex;
     flex-direction: column;
     text-align: center;
+    gap: 20px;
 }
 .instructions{
     display: flex;
     justify-content: space-around;
+    gap: 30px;
 }
 .cards{
     height: 130px;
@@ -73,12 +71,28 @@
      padding-top: 30px;
      /* color: white; */
 }
+
+.cards .fa-circle-question, .cards .fa-message, .cards .fa-comments, .cards .fa-arrow-up{
+    color: #CC6222;
+    font-size: 3rem;
+
+} 
+/* .second{
+    margin-top: 18px;
+} */
 .stats{
     display: flex;
     justify-content: space-around;
+    margin-top: 30px;
 }
+/* .card{
+    box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.05),
+0 20px 48px hsla(0, 0%, 0%, 0.05),
+0 1px 4px hsla(0, 0%, 0%, 0.1);
+    border-radius: 7px;
+} */
 
-.users-card .fa-users{
-    color:aqua;
+.card .fa-users,.card .fa-clipboard-question, .card .fa-message {
+    color: #CC6222;
     font-size: 3rem;
 }

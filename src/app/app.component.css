@@ -27,6 +27,7 @@
 .end{
     display: flex;
     justify-content: space-around;
+    padding-top: 10px;
     height: 150px;
     background-color: rgb(134, 185, 216);
 }

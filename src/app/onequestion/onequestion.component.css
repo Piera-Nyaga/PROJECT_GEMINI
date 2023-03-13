@@ -1,10 +1,8 @@
-.question, .answer,.section-1 {
+.question,.section-1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap:100px; */
     padding: 20px;
-    
     border-radius: 10px;
 }
 .question{
@@ -13,4 +11,39 @@
 .section-1, .answer{
     background-color: azure;
     width: 100%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+
+}
+.metadata{
+    display: flex;
+    justify-content: space-between;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 5px; */
+}
+.answer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.meta{
+    display: flex;
+    justify-content: space-between;    
+}
+.theanswer{
+    display: flex;
+    gap: 10px;
+}
+.votes{
+    gap: 5px;
+}
+.upvote .fa-arrow-up, .downvote .fa-arrow-down{
+    color: #CC6222;
+    font-size: 2rem;
 }

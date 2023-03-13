@@ -20,11 +20,10 @@ form{
     button{
         height:30px;
         width:90px;
-        background-color:rgb(204, 98, 34) ;
-        color: white;
-        border-radius: 7px;
-    }
+        border: 0.5em;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: #CC6222;  
+    font-size: 17px;
     
-    button p{
-        text-align: center;
     }

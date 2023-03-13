@@ -1,5 +1,5 @@
 
-#sign{
+/* #sign{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,10 +10,41 @@
     padding: 30px;
     margin-left: 300px;
 
+} */
+
+#sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    width: 700px;
+    border-radius: 7px;
+    /* padding: 30px; */
+    height: 90%;
+    margin-top: 40px;
+    margin-left: 300px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;        
+}
+
+form h3{
+    text-align: center;
+}
+
+form input {
+    height: 30px;
+    width: 90%;
+
 }
 
 /* the sign-up form */
-form{
+/* form{
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -22,22 +53,25 @@ form{
 
 form input {
     height: 30px;
-}
+    width: 80%;
+} */
 
 /* Sign in button */
 .signin{
     height: 30px;
-    width: 100px;
+    width: 90px;
     border: 0.5em;
+    margin-top: 20px;
     border-radius: 7px;
-    background-color: rgba(35, 166, 240, 255);  
+    background-color: #CC6222;  
     
 }
-
 
 /* links */
 #buttns{
     display: flex;
     flex-direction: row;
     gap: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
